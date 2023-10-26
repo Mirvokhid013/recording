@@ -16,6 +16,7 @@ elMicro.addEventListener("click", function() {
 record.onresult = function(evt) {
     const result = evt.results[0][0].transcript;
     elInput.value = result;
+    elInner.style.backgroundColor = result;
 }
 
 
